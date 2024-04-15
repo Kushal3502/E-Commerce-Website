@@ -1,9 +1,6 @@
-// import './style.css'
 import { generateCards } from "./generateCards"
 
 const productCardContainer = document.querySelector('.product-card-container')
-// console.log(productCardContainer);
-
 
 // <-------------------- generate categories -------------------->
 
@@ -35,8 +32,8 @@ async function getData(limit) {
 
 async function fetchData() {
     const data = await getData(32);
-    console.log(data);
-    generateCards(productCardContainer,data)
+    // console.log(data);
+    generateCards(productCardContainer, data)
 }
 
 fetchData();
@@ -62,5 +59,5 @@ async function getCategoryData(category) {
 async function fetchCategoryData(category) {
     const data = await getCategoryData(category);
     console.log(data);
-    generateCards(productCardContainer,data)
+    generateCards(productCardContainer, data)
 }

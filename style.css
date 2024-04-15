@@ -160,6 +160,36 @@ ul a {
   margin-bottom: 10px;
 }
 
+.quantity-input {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.quantity-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quantity-field {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.quantity-btn:hover {
+  background-color: #aaa;
+}
+
 a {
   padding: 5px;
   cursor: pointer;
@@ -170,7 +200,8 @@ a {
 
 .add-to-cart-btn {
   width: 100%;
-  background-color: rgb(255, 123, 0);
+  background-color: orangered;
+  color: aliceblue;
   border: none;
   border-radius: 10px;
   padding: 5px;
@@ -184,7 +215,7 @@ a {
 }
 
 .shop-content {
-  display: flex;
+  /* display: flex; */
   /* align-items: center; */
   gap: 30px;
   width: 100%;
@@ -193,11 +224,95 @@ a {
 
 .categories-container {
   background-color: lightsteelblue;
-  width: 15vw;
-  height: 100vh;
+  /* width: 15vw; */
+  /* height: 100vh; */
 }
 
 .product-card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px;
+}
+
+.cart-content {
+  width: 100vw;
+  /* height: 100vh; */
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.cart-items-container {
+  width: 60vw;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  /* background-color: lightcoral; */
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.quantity-details {
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.price-container {
+  width: 30vw;
+  /* height: 100vh; */
+  background-color: lightgray;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.price-container h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.price-cart-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-value {
+  padding: 13px;
+  background-color: orangered;
+  font-size: 23px;
+  font-weight: 600;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.amount {
+  text-align: center;
 }
