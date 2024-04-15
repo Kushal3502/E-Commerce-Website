@@ -123,11 +123,12 @@ ul a {
 }
 
 .random-card-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   column-gap: 40px;
   margin-top: 20px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -210,10 +211,6 @@ a {
   font-weight: 600;
 }
 
-.add-to-cart-btn:hover {
-  background-color: rgb(235, 116, 4);
-}
-
 .shop-content {
   /* display: flex; */
   /* align-items: center; */
@@ -278,6 +275,21 @@ a {
 .quantity-details {
   margin-left: 60px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.remove-item-btn {
+  cursor: pointer;
+  background-color: rgb(250, 19, 19);
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
 }
 
 .price-container {
