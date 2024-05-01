@@ -1,4 +1,4 @@
-import { generateCards } from "./generateCards"
+import { generateCards } from "./generateCards.js"
 
 const productCardContainer = document.querySelector('.product-card-container')
 
