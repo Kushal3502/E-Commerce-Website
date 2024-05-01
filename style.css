@@ -123,12 +123,12 @@ ul a {
 }
 
 .random-card-container {
-  column-gap: 40px;
-  margin-top: 20px;
-  font-weight: 600;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px;
 }
 
 .card {
@@ -223,6 +223,11 @@ a {
   background-color: lightsteelblue;
   /* width: 15vw; */
   /* height: 100vh; */
+  padding: 20px;
+}
+
+.categories-container h2 {
+  margin-bottom: 15px;
 }
 
 .product-card-container {
@@ -254,6 +259,8 @@ a {
 .cart-item {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 5vw;
   /* background-color: lightcoral; */
   margin-bottom: 50px;
   padding: 20px;
@@ -273,12 +280,20 @@ a {
 }
 
 .quantity-details {
-  margin-left: 60px;
+  /* margin-left: 60px; */
   font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.quantity-input {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  font-size: 1.3vw;
 }
 
 .remove-item-btn {
