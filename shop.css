@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Shop Container */
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Shop Content */
+.shop-content {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.categories-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.category-btn {
+  width: 200px;
+}
+
+.loader {
+  display: none;
+}
+
+.loader.active {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card-container {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.card .add-to-cart-btn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card .add-to-cart-btn:hover {
+  background-color: #ff4500;
+}
+
+/* Responsive Shop Content */
+@media (max-width: 1024px) {
+  .product-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-content {
+    flex-direction: column;
+  }
+
+  .categories-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .pages ul a {
+    font-size: 0.9rem;
+  }
+
+  .product-card-container {
+    grid-template-columns: 1fr;
+  }
+}

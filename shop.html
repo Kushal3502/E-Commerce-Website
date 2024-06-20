@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="shop-container">
-        <div class="navbar">
-            <div class="logo">ShopiFy</div>
-            <div class="pages">
-                <ul>
-                    <a href="index.html">Home</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </ul>
-                <div class="cart">
-                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="logo">ShopiFy</div>
+        <div class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="shop-content">
-            <div class="categories-container">
-                <h2>Filter by category</h2>
-                <div class="categories"></div>
-            </div>
-            <div class="product-card-container"></div>
+        <div class="pages" id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="cart">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="shop-content">
+        <div class="categories-container">
+          <h2>Filter by category</h2>
+          <div class="categories"></div>
+        </div>
+        <div class="loader">Loading...</div>
+        <div class="product-card-container"></div>
+      </div>
     </div>
     <script type="module" src="shop.js"></script>
-</body>
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navbar = document.getElementById("navbar");
 
+      menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
